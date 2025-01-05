@@ -1,8 +1,9 @@
 # This is p16.py 
-def star_pattern2(n):
-    for i in range(1, n + 1):
-        print('* ' * i)
+# Take the number of rows as input
+rows = int(input("Enter the number of rows: "))
 
-# Input and execution
-n = int(input("Enter the number of rows: "))
-star_pattern2(n)
+for i in range(1, rows + 1):
+    # Print leading spaces
+    print(" " * (rows - i), end="")
+    # Print stars with spaces
+    print("* " * i)
